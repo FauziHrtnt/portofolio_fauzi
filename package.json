@@ -1,0 +1,48 @@
+{
+  "name": "my-app",
+  "version": "3.1.0",
+  "homepage": "https://www.yazan98.github.io",
+  "private": true,
+  "description": "My Personal Website (Portfolio) V2",
+  "author": "Yazan Tarifi <yazantarifi98@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "Personal Website",
+    "React",
+    "React.js",
+    "Next.js",
+    "CV",
+    "Portfolio"
+  ],
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lucide-react": "^0.364.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
+    "react-helmet-async": "^2.0.4",
+    "react-icons": "^5.6.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "sass": "^1.72.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=18.20.2",
+    "npm": ">=10.5.0"
+  }
+}

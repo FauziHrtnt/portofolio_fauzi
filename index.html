@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+        content="Fauzi Hartanto Personal Portfolio Website - Web & Android Developer" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" sizes="200x200" />
+    <meta name="keywords"
+        content="portfolio, personal website, developer, web developer, android developer, php, mysql, codeigniter, java, python, solid edge" />
+    <meta name="author" content="Fauzi Hartanto" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/FauziHrtnt" />
+    <meta name="title" content="Fauzi Hartanto - Web & Android Developer" />
+    <meta property="og:title" content="Fauzi Hartanto - Web & Android Developer" />
+    <meta property="og:description"
+        content="Fauzi Hartanto - Portfolio Website, Web & Android Developer" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Fauzi Hartanto - Web & Android Developer" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fauzi Hartanto - Web & Android Developer" />
+    <meta name="twitter:description"
+        content="Fauzi Hartanto - Portfolio Website, Web & Android Developer" />
+    <meta name="twitter:image" content="" />
+
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="noscript-styles.css">
+
+    <title>Fauzi Hartanto - Web & Android Developer</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+
+    <noscript>
+        <style>
+            :root {
+                --bg-dark-300: #0a0a0a;
+                --bg-dark-200: #141414;
+                --bg-dark-100: #1f1f1f;
+                --border-gray: #27272a;
+                --text-gray: #9ca3af;
+                --text-white: #f3f4f6;
+                --primary: #a855f7;
+                --cyan: #22d3ee;
+            }
+
+            body {
+                margin: 0;
+                background-color: var(--bg-dark-300);
+                color: var(--text-white);
+                font-family: 'Inter', 'Roboto', sans-serif;
+                line-height: 1.5;
+            }
+
+            .ns-container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 60px 20px;
+            }
+
+            /* Hero Section */
+            .ns-hero {
+                text-align: center;
+                margin-bottom: 80px;
+                padding-top: 40px;
+            }
+
+            .ns-badge {
+                display: inline-block;
+                padding: 6px 16px;
+                background-color: var(--bg-dark-100);
+                border: 1px solid var(--border-gray);
+                color: var(--primary);
+                font-size: 0.875rem;
+                font-weight: 600;
+                border-radius: 9999px;
+                margin-bottom: 24px;
+            }
+
+            .ns-hero h1 {
+                font-size: 4.5rem;
+                font-weight: 800;
+                margin: 10px 0;
+                letter-spacing: -0.025em;
+                line-height: 1.1;
+            }
+
+            .ns-gradient-text {
+                background: linear-gradient(to right, var(--primary), var(--cyan));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: transparent;
+            }
+
+            .ns-hero h2 {
+                font-size: 2.25rem;
+                color: #d1d5db;
+                margin: 10px 0 20px 0;
+                font-weight: 500;
+            }
+
+            .ns-hero p {
+                font-size: 1.125rem;
+                color: var(--text-gray);
+                max-width: 800px;
+                margin: 0 auto 40px auto;
+                line-height: 1.7;
+            }
+
+            .ns-hero-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+
+            .ns-btn-primary {
+                display: inline-block;
+                padding: 14px 32px;
+                background: linear-gradient(to right, #9333ea, #a855f7);
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+                border-radius: 9999px;
+            }
+
+            .ns-btn-secondary {
+                display: inline-block;
+                padding: 14px 32px;
+                background-color: var(--bg-dark-100);
+                border: 1px solid var(--border-gray);
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+                border-radius: 9999px;
+                transition: background-color 0.2s;
+            }
+
+            .ns-btn-secondary:hover {
+                background-color: #27272a;
+            }
+
+            /* General Sections */
+            .ns-section {
+                margin-bottom: 80px;
+            }
+
+            .ns-section-header {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .ns-section-title {
+                font-size: 3rem;
+                font-weight: 800;
+                margin: 0 0 16px 0;
+            }
+
+            /* Grid Layouts */
+            .ns-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 24px;
+            }
+
+            .ns-grid-cols-2 {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 16px;
+            }
+
+            /* Cards */
+            .ns-card {
+                background-color: var(--bg-dark-200);
+                border: 1px solid var(--border-gray);
+                padding: 32px;
+                border-radius: 24px;
+                transition: transform 0.2s, border-color 0.2s;
+            }
+
+            .ns-card:hover {
+                border-color: rgba(168, 85, 247, 0.5);
+                transform: translateY(-4px);
+            }
+
+            .ns-card h3 {
+                font-size: 1.5rem;
+                margin: 0 0 16px 0;
+                color: #fff;
+            }
+
+            .ns-card p {
+                margin: 0;
+                color: var(--text-gray);
+                line-height: 1.6;
+            }
+
+            .ns-lang-card {
+                background-color: var(--bg-dark-200);
+                border: 1px solid var(--border-gray);
+                padding: 24px;
+                border-radius: 16px;
+                text-align: center;
+                transition: transform 0.2s, border-color 0.2s;
+            }
+
+            .ns-lang-card:hover {
+                border-color: rgba(34, 211, 238, 0.5);
+                transform: scale(1.05);
+            }
+
+            .ns-lang-card h3 {
+                font-size: 1.25rem;
+                margin: 0 0 8px 0;
+                color: #f3f4f6;
+            }
+
+            .ns-lang-card p {
+                font-size: 0.875rem;
+                margin: 0;
+                color: var(--text-gray);
+            }
+
+            /* Contact Box */
+            .ns-contact-card {
+                background-color: var(--bg-dark-200);
+                border: 1px solid var(--border-gray);
+                padding: 50px;
+                border-radius: 32px;
+            }
+
+            .ns-contact-card h2 {
+                font-size: 4rem;
+                font-weight: 800;
+                margin: 0 0 24px 0;
+                line-height: 1.1;
+            }
+
+            .ns-contact-card p {
+                color: var(--text-gray);
+                font-size: 1.125rem;
+                margin-bottom: 16px;
+            }
+
+            .ns-contact-link {
+                color: var(--cyan);
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            .ns-contact-link:hover {
+                text-decoration: underline;
+            }
+        </style>
+
+        <div class="ns-container">
+            <!-- Hero Section -->
+            <header class="ns-hero">
+                <div class="ns-badge">Information Systems Student & Developer</div>
+                <h1>Hi, I'm <span class="ns-gradient-text">Fauzi Hartanto</span></h1>
+                <h2>Web & Android Developer</h2>
+                <p>An Information Systems student at Universitas Teknologi Yogyakarta. Experienced in building inventory management web applications using CodeIgniter 3 (PHP) and developing native Android applications with Java (Android Studio).</p>
+                <div class="ns-hero-buttons">
+                    <a href="#services" class="ns-btn-primary">Explore My Work</a>
+                    <a href="mailto:hartantofauzi14@gmail.com" class="ns-btn-secondary">Contact Me</a>
+                </div>
+            </header>
+
+            <!-- What I Do Section -->
+            <section class="ns-section" id="services">
+                <div class="ns-section-header">
+                    <div class="ns-badge">My Focus Areas</div>
+                    <h2 class="ns-section-title">What I <span class="ns-gradient-text">Do</span></h2>
+                </div>
+                <div class="ns-grid">
+                    <div class="ns-card">
+                        <h3 class="ns-gradient-text">Web Applications</h3>
+                        <p>Building responsive web systems with PHP, CodeIgniter 3, and relational databases. Designing and optimizing inventory management tools and custom corporate solutions.</p>
+                    </div>
+                    <div class="ns-card">
+                        <h3 class="ns-gradient-text"
+                            style="background: linear-gradient(to right, #22d3ee, #818cf8); -webkit-background-clip: text; color: transparent;">
+                            Android Development</h3>
+                        <p>Designing and developing native Android applications using Java and Android Studio, focusing on performance, modular layouts, and clean user experience.</p>
+                    </div>
+                    <div class="ns-card">
+                        <h3 class="ns-gradient-text"
+                            style="background: linear-gradient(to right, #fb7185, #a855f7); -webkit-background-clip: text; color: transparent;">
+                            3D CAD & Documentation</h3>
+                        <p>Creating highly accurate 3D designs for assemblies (jigs & fixtures) with Solid Edge and authoring professional Standard Operating Procedures (SOPs).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Languages Section -->
+            <section class="ns-section">
+                <div class="ns-section-header">
+                    <h2 class="ns-section-title" style="font-size: 2.25rem;">Core Languages</h2>
+                </div>
+                <div class="ns-grid-cols-2">
+                    <div class="ns-lang-card">
+                        <h3>PHP</h3>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="ns-lang-card">
+                        <h3>Java</h3>
+                        <p>Android Development</p>
+                    </div>
+                    <div class="ns-lang-card">
+                        <h3>Python</h3>
+                        <p>Scripting / AI</p>
+                    </div>
+                    <div class="ns-lang-card">
+                        <h3>SQL</h3>
+                        <p>Database design</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="ns-section" id="contact">
+                <div class="ns-contact-card">
+                    <div class="ns-badge" style="color: #22d3ee; border-color: rgba(34, 211, 238, 0.3);">Get In Touch
+                    </div>
+                    <h2>Let's build<br><span class="ns-gradient-text">something great.</span></h2>
+                    <p>Location: <span style="color: #fff;">Kab. Kulon Progo, DI Yogyakarta</span></p>
+                    <p>Email: <a href="mailto:hartantofauzi14@gmail.com"
+                            class="ns-contact-link">hartantofauzi14@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/FauziHrtnt" class="ns-contact-link">github.com/FauziHrtnt</a></p>
+                </div>
+            </section>
+        </div>
+    </noscript>
+
+</body>
+
+</html>
