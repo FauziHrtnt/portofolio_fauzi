@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 import HomePage from './pages/HomePage';
@@ -17,7 +17,7 @@ function App() {
     }, []);
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <ScrollToTop />
 
             <Helmet>
@@ -70,7 +70,7 @@ function App() {
                 </main>
                 <Footer />
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
