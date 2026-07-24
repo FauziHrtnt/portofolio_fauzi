@@ -19,17 +19,17 @@ export function getSkillsList() {
 export default function getServicesList() {
     return [
         {
-            tag: "Pengembang Web",
-            title: "Aplikasi Web",
+            tag: "Web Developer",
+            title: "Web Applications",
             description: "Membangun sistem web responsif dengan PHP, CodeIgniter 3, dan database relasional. Merancang dan mengoptimalkan alat manajemen inventaris serta solusi kustom perusahaan."
         },
         {
-            tag: "Pengembang Mobile",
+            tag: "Mobile Developer",
             title: "Pengembangan Android",
             description: "Merancang dan mengembangkan aplikasi Android native menggunakan Java dan Android Studio, berfokus pada performa, tata letak modular, dan pengalaman pengguna yang bersih."
         },
         {
-            tag: "Insinyur CAD",
+            tag: "CAD Engineer",
             title: "CAD 3D & Dokumentasi",
             description: "Membuat desain 3D yang sangat akurat untuk perakitan (jig & fixture) dengan Solid Edge serta menyusun Prosedur Operasional Standar (SOP) profesional."
         }
